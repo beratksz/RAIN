@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RAIN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0207b0f5dbb21de2b16d2e72c02bf4748f380b6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("RAIN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RAIN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\berat\\source\\repos\\RAIN\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|c:\\users\\berat\\source\\repos\\rain\\views\\home\\ekibimiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|solutionrelative:views\\home\\ekibimiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ekibimiz.cshtml",
-              "DocumentMoniker": "C:\\Users\\berat\\source\\repos\\RAIN\\Views\\Home\\ekibimiz.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ekibimiz.cshtml",
-              "ToolTip": "C:\\Users\\berat\\source\\repos\\RAIN\\Views\\Home\\ekibimiz.cshtml",
-              "RelativeToolTip": "Views\\Home\\ekibimiz.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwC8AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-16T13:21:00.725Z",
-              "EditorCaption": ""
             }
           ]
         }
