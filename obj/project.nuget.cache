@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "UaahmhlTW2U=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\berat\\source\\repos\\RAIN\\RAIN.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\berat\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
+    "C:\\Users\\berat\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}

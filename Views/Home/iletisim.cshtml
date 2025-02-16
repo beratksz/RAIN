@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form (Bootstrap 5 Validation)</title>
+    <link rel="stylesheet" href="~/css/iletisimformu.css">
+    <link rel="stylesheet" href="~/css/randevuonayi.css">
+</head>
+
+<body>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Randevu Al</h3>
+                        <p>Aşağıdaki Bilgileri eksiksiz doldurunuz.</p>
+                        <form class="requires-validation" novalidate onsubmit="showModal(event)">
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="name" placeholder="Tam Adınız" required>
+                                <div class="valid-feedback">Kullanıcı adı alanı geçerli!</div>
+                                <div class="invalid-feedback">Kullanıcı adı alanı boş bırakılamaz!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                                <div class="valid-feedback">E-posta alanı geçerlidir!</div>
+                                <div class="invalid-feedback">E-posta alanı boş bırakılamaz!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="tel" name="tel" placeholder="Telefon Numarası" required>
+                                <div class="valid-feedback">Telefon alanı geçerli!</div>
+                                <div class="invalid-feedback">Telefon alanı boş bırakılamaz!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select mt-3" required>
+                                    <option selected disabled value="">Doktor Seçiniz</option>
+                                    <option value="jweb">doktor1</option>
+                                    <option value="sweb">doktor2</option>
+                                    <option value="pmanager">doktor3</option>
+                                </select>
+                                <div class="valid-feedback">Bir doktor seçtiniz!</div>
+                                <div class="invalid-feedback">Lütfen bir doktor seçin!</div>
+                            </div>
+
+                            <div class="col-md-12 mt-3">
+                                <label class="mb-3 mr-1" for="muayene">Muayene Durumu: </label>
+
+                                <input type="radio" class="btn-check" name="muayene" id="yuzyuze" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="yuzyuze">Yüz Yüze</label>
+
+                                <input type="radio" class="btn-check" name="muayene" id="online" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="online">Online</label>
+                                
+                                <div class="valid-feedback mv-up">Bir tür seçtiniz!</div>
+                                <div class="invalid-feedback mv-up">Lütfen bir tür seçin!</div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label">Tüm verilerin doğru olduğunu onaylıyorum</label>
+                                <div class="invalid-feedback">Lütfen girilen tüm verilerin doğru olduğunu onaylayın!</div>
+                            </div>
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">Randevu Onayla</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Randevu Onayı</h5>
+                </div>
+                <div class="modal-body">
+                    <svg class="spinner" viewBox="0 0 48 48" role="img" aria-label="A partial ring that rotates and then is shaped as a checkmark, which pops out yielding confetti">
+                        <g fill="none" stroke="currentcolor" stroke-linecap="round" stroke-width="4">
+                            <circle class="spinner__worm" cx="24" cy="24" r="22" stroke-dasharray="138.23 138.23" stroke-dashoffset="-51.84" transform="rotate(-119)" />
+                            <circle class="spinner__pop-end" stroke="var(--light-green)" cx="24" cy="24" r="18" opacity="0" />
+                            <g fill="currentcolor" stroke="none">
+                                <circle class="spinner__pop-start" fill="var(--light-green)" cx="24" cy="24" r="20" opacity="0" />
+                                <g>
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--periwinkle)" cx="22" cy="5" r="1.5" />
+                                    </g>
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--light-blue)" cx="26" cy="2" r="1.5" />
+                                    </g>
+                                </g>
+                                <g transform="rotate(51.43,24,24)">
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--orange)" cx="22" cy="5" r="1.5" />
+                                    </g>
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--magenta)" cx="26" cy="2" r="1.5" />
+                                    </g>
+                                </g>
+                                <g transform="rotate(102.86,24,24)">
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--light-green)" cx="22" cy="5" r="1.5" />
+                                    </g>
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--light-teal)" cx="26" cy="2" r="1.5" />
+                                    </g>
+                                </g>
+                                <g transform="rotate(154.29,24,24)">
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--purple)" cx="22" cy="5" r="1.5" />
+                                    </g>
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--magenta)" cx="26" cy="2" r="1.5" />
+                                    </g>
+                                </g>
+                                <g transform="rotate(205.71,24,24)">
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--light-teal)" cx="22" cy="5" r="1.5" />
+                                    </g>
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--light-blue)" cx="26" cy="2" r="1.5" />
+                                    </g>
+                                </g>
+                                <g transform="rotate(257.14,24,24)">
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--periwinkle)" cx="22" cy="5" r="1.5" />
+                                    </g>
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--light-blue)" cx="26" cy="2" r="1.5" />
+                                    </g>
+                                </g>
+                                <g transform="rotate(308.57,24,24)">
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--purple)" cx="22" cy="5" r="1.5" />
+                                    </g>
+                                    <g class="spinner__pop-dot-group" opacity="0">
+                                        <circle class="spinner__pop-dot" fill="var(--light-teal)" cx="26" cy="2" r="1.5" />
+                                    </g>
+                                </g>
+                            </g>
+                            <path class="spinner__check" d="M 17 25 L 22 30 C 22 30 32.2 19.8 37.3 14.7 C 41.8 10.2 39 7.9 39 7.9" stroke-dasharray="36.7 36.7" stroke-dashoffset="-36.7" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showModal(event) {
+            event.preventDefault(); // Formun varsayılan gönderimini engelle
+            var modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+            modal.show();
+        }
+    </script>
+</body>
+</html>
