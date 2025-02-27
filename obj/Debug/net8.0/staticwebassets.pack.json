@@ -277,8 +277,20 @@
       "PackagePath": "staticwebassets\\imgs\\kurumsal_ter.jpg"
     },
     {
+      "Id": "C:\\Users\\berat\\source\\repos\\RAIN\\wwwroot\\imgs\\kus.png",
+      "PackagePath": "staticwebassets\\imgs\\kus.png"
+    },
+    {
       "Id": "C:\\Users\\berat\\source\\repos\\RAIN\\wwwroot\\imgs\\logo.png",
       "PackagePath": "staticwebassets\\imgs\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\berat\\source\\repos\\RAIN\\wwwroot\\imgs\\sila.JPEG",
+      "PackagePath": "staticwebassets\\imgs\\sila.JPEG"
+    },
+    {
+      "Id": "C:\\Users\\berat\\source\\repos\\RAIN\\wwwroot\\imgs\\zena.png",
+      "PackagePath": "staticwebassets\\imgs\\zena.png"
     },
     {
       "Id": "C:\\Users\\berat\\source\\repos\\RAIN\\wwwroot\\js\\iletisimformu.js",

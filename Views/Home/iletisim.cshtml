@@ -15,32 +15,32 @@
                     <div class="form-items">
                         <h3>Randevu Al</h3>
                         <p>Aşağıdaki Bilgileri eksiksiz doldurunuz.</p>
-                        <form class="requires-validation" novalidate onsubmit="showModal(event)">
+                        <form class="requires-validation" novalidate onsubmit="submitForm(event)">
 
                             <div class="col-md-12">
-                                <input class="form-control" type="text" name="name" placeholder="Tam Adınız" required>
-                                <div class="valid-feedback">Kullanıcı adı alanı geçerli!</div>
-                                <div class="invalid-feedback">Kullanıcı adı alanı boş bırakılamaz!</div>
+                                <input class="form-control" type="text" name="Isim" placeholder="Tam Adınız" required>
+                                <div class="valid-feedback">İsim alanı geçerli!</div>
+                                <div class="invalid-feedback">İsim alanı boş bırakılamaz!</div>
                             </div>
 
                             <div class="col-md-12">
-                                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                                <input class="form-control" type="email" name="Email" placeholder="E-mail Address" required>
                                 <div class="valid-feedback">E-posta alanı geçerlidir!</div>
                                 <div class="invalid-feedback">E-posta alanı boş bırakılamaz!</div>
                             </div>
 
                             <div class="col-md-12">
-                                <input class="form-control" type="tel" name="tel" placeholder="Telefon Numarası" required>
+                                <input class="form-control" type="tel" name="Telefon" placeholder="Telefon Numarası" required>
                                 <div class="valid-feedback">Telefon alanı geçerli!</div>
                                 <div class="invalid-feedback">Telefon alanı boş bırakılamaz!</div>
                             </div>
 
                             <div class="col-md-12">
-                                <select class="form-select mt-3" required>
+                                <select class="form-select mt-3" name="DoktorSecimi" required>
                                     <option selected disabled value="">Doktor Seçiniz</option>
-                                    <option value="jweb">doktor1</option>
-                                    <option value="sweb">doktor2</option>
-                                    <option value="pmanager">doktor3</option>
+                                    <option value="sila">Uzman Psikolog Şila</option>
+                                    <option value="zena">Uzman Psikolog Zena</option>
+                                    <option value="hayri">Uzman Pskiyatri Hayri</option>
                                 </select>
                                 <div class="valid-feedback">Bir doktor seçtiniz!</div>
                                 <div class="invalid-feedback">Lütfen bir doktor seçin!</div>
@@ -49,18 +49,18 @@
                             <div class="col-md-12 mt-3">
                                 <label class="mb-3 mr-1" for="muayene">Muayene Durumu: </label>
 
-                                <input type="radio" class="btn-check" name="muayene" id="yuzyuze" autocomplete="off" required>
+                                <input type="radio" class="btn-check" name="MuayeneTipi" id="yuzyuze" value="yuzyuze" autocomplete="off" required>
                                 <label class="btn btn-sm btn-outline-secondary" for="yuzyuze">Yüz Yüze</label>
 
-                                <input type="radio" class="btn-check" name="muayene" id="online" autocomplete="off" required>
+                                <input type="radio" class="btn-check" name="MuayeneTipi" id="online" value="online" autocomplete="off" required>
                                 <label class="btn btn-sm btn-outline-secondary" for="online">Online</label>
-                                
+
                                 <div class="valid-feedback mv-up">Bir tür seçtiniz!</div>
                                 <div class="invalid-feedback mv-up">Lütfen bir tür seçin!</div>
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <input class="form-check-input" type="checkbox" name="isConfirmed" id="invalidCheck" required>
                                 <label class="form-check-label">Tüm verilerin doğru olduğunu onaylıyorum</label>
                                 <div class="invalid-feedback">Lütfen girilen tüm verilerin doğru olduğunu onaylayın!</div>
                             </div>
@@ -153,12 +153,39 @@
             </div>
         </div>
     </div>
-    
+
     <script>
-        function showModal(event) {
+        async function submitForm(event) {
             event.preventDefault(); // Formun varsayılan gönderimini engelle
-            var modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
-            modal.show();
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('/Home/SubmitForm', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    if (result.success) {
+                        var modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+                        modal.show();
+                    } else {
+                        alert(result.message);
+                    }
+                } else {
+                    alert('Form gönderimi başarısız oldu.');
+                }
+            } catch (error) {
+                console.error('Hata:', error);
+                alert('Form gönderimi sırasında bir hata oluştu.');
+            }
         }
     </script>
 </body>

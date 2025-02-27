@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\berat\\source\\repos\\RAIN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|c:\\users\\berat\\source\\repos\\rain\\views\\home\\ekibimiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|solutionrelative:views\\home\\ekibimiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|c:\\users\\berat\\source\\repos\\rain\\views\\home\\iletisim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|solutionrelative:views\\home\\iletisim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|c:\\users\\berat\\source\\repos\\rain\\models\\contactmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|solutionrelative:models\\contactmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|c:\\users\\berat\\source\\repos\\rain\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|c:\\users\\berat\\source\\repos\\rain\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0FF726-34DF-47AD-8BE7-25D8BFEFAD9C}|RAIN.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +38,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\berat\\source\\repos\\RAIN\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\berat\\source\\repos\\RAIN\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:41:53.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\berat\\source\\repos\\RAIN\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\berat\\source\\repos\\RAIN\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv1MAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:36:30.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactModel.cs",
+              "DocumentMoniker": "C:\\Users\\berat\\source\\repos\\RAIN\\Models\\ContactModel.cs",
+              "RelativeDocumentMoniker": "Models\\ContactModel.cs",
+              "ToolTip": "C:\\Users\\berat\\source\\repos\\RAIN\\Models\\ContactModel.cs*",
+              "RelativeToolTip": "Models\\ContactModel.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:37:54.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ekibimiz.cshtml",
-              "DocumentMoniker": "C:\\Users\\berat\\source\\repos\\RAIN\\Views\\Home\\ekibimiz.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ekibimiz.cshtml",
-              "ToolTip": "C:\\Users\\berat\\source\\repos\\RAIN\\Views\\Home\\ekibimiz.cshtml",
-              "RelativeToolTip": "Views\\Home\\ekibimiz.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwC8AAAALAAAAAAAAAA==",
+              "Title": "iletisim.cshtml",
+              "DocumentMoniker": "C:\\Users\\berat\\source\\repos\\RAIN\\Views\\Home\\iletisim.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\iletisim.cshtml",
+              "ToolTip": "C:\\Users\\berat\\source\\repos\\RAIN\\Views\\Home\\iletisim.cshtml*",
+              "RelativeToolTip": "Views\\Home\\iletisim.cshtml*",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-16T13:21:00.725Z",
+              "WhenOpened": "2025-02-24T16:48:38.611Z",
               "EditorCaption": ""
             }
           ]

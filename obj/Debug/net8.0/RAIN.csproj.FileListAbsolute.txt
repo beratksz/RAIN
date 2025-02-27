@@ -34,3 +34,4 @@ C:\Users\berat\source\repos\RAIN\obj\Debug\net8.0\RAIN.genruntimeconfig.cache
 C:\Users\berat\source\repos\RAIN\obj\Debug\net8.0\ref\RAIN.dll
 C:\Users\berat\source\repos\RAIN\bin\Debug\net8.0\package-lock.json
 C:\Users\berat\source\repos\RAIN\bin\Debug\net8.0\package.json
+C:\Users\berat\source\repos\RAIN\obj\Debug\net8.0\RAIN.sourcelink.json

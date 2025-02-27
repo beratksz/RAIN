@@ -2,6 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7009/api/hastalar") });
 
 var app = builder.Build();
 

@@ -66,7 +66,10 @@ wwwroot\imgs\bireyselterapi.jpeg
 wwwroot\imgs\cift_ter.jpg
 wwwroot\imgs\doktor1.JPG
 wwwroot\imgs\kurumsal_ter.jpg
+wwwroot\imgs\kus.png
 wwwroot\imgs\logo.png
+wwwroot\imgs\sila.JPEG
+wwwroot\imgs\zena.png
 wwwroot\js\iletisimformu.js
 wwwroot\js\voyager.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
